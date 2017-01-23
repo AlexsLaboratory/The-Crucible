@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>The Crucible</title>
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <script src="js/main.js" type="text/javascript"></script>
+</head>
+<body>
+<body>
+  <div id="game-board"></div>
+  <div id="mainContainer">
+    <br>
+    <p id="question"></p>
+    <br>
+    <div id="question-container">
+      <input type="radio" id="0" name="options">
+      <label for="0" id="l0" class="options"></label>
+      <br>
+      <input type="radio" id="1" name="options">
+      <label for="1" id="l1" class="options"></label>
+      <br>
+      <input type="radio" id="2" name="options">
+      <label for="2" id="l2" class="options"></label>
+      <br>
+      <input type="radio" id="3" name="options">
+      <label for="3" id="l3" class="options"></label>
+    </div>
+    <br>
+    <input type="button" value="Check" id="submit" onclick="check();">
+    <br>
+    <br>
+    <!-- <p>Checked Radio Value: <b id="statusChecked">none</b>.</p> -->
+    <div id="score">
+      <p>Player 1 Score: <b id="p1correct">0</b>/<b id="p1incorrect">0</b></p>
+      <p>Player 2 Score: <b id="p2correct">0</b>/<b id="p2incorrect">0</b></p>
+    </div>
+    <br>
+  </div>
+</body>
+</body>
+</html>

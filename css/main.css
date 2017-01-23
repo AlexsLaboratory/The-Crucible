@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+#currentTurn {
+  font-family: 'Roboto', sans-serif;
+  display: inherit;
+  font-weight: bold;
+}
+
+#mainContainer {
+  display: block;
+  margin: 0 auto;
+  font-size: 24px;
+}
+
+#mainContainer, #question, p, input, label {
+  margin: 0 auto;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+#question-container > input[type="radio"] {
+  display: none;
+}
+
+#question-container > input[type="radio"] + label {
+  display: block;
+  margin-bottom: 10px;
+  position: relative;
+  padding-left: 30px;
+  line-height: 20px;
+}
+
+#question-container > input[type="radio"] + label:before {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  left: 0px;
+  width: 20px;
+  height: 20px;
+  background-color: #546E7A;
+}
+
+#question-container > input[type="radio"]:checked + label:after {
+  position: absolute;
+  content: '';
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-color: #e67e22;
+  left: 5px;
+  top: 5px;
+}
+
+/* This code is for the game board */
+
+.player1,
+.player2 {
+  box-sizing: border-box;
+}
+
+#game-board {
+  position: relative;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  border: 2px solid black;
+  width: 1350px;
+  height: auto;
+  overflow: hidden;
+}
+
+.block {
+  position: relative;
+  display: block;
+  margin-left: 8px;
+  margin-top: 8px;
+  float: left;
+  border: 2px solid #95a5a6;
+  width: 256px;
+  height: 256px;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+
+[id='60'] {
+  margin-bottom: 8px;
+}
+
+.player1 {
+  display: block;
+  height: 50%;
+  width: 100%;
+  /*border: 2px solid orange;*/
+  position: relative;
+}
+
+.player2 {
+  display: block;
+  height: 50%;
+  width: 100%;
+/*  border: 2px solid red;*/
+  position: relative;
+}
+
+/* End game board code */
+
+#directions {
+  text-align: center;
+  display: block;
+  border: 2px solid #000;
+  width: 78.8%;
+  margin: 8px 0 0 277px;
+  height: 260px;
+  box-sizing: border-box;
+}
+
+#player1-icon {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+img {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#submit {
+  display: inline-block;
+  position: relative;
+  border: 2px solid #999;
+  color: #000;
+  background-color: #f3ba29;
+  text-decoration: none;
+  padding: 8px 16px;
+  transition:color .2s ease-out, background .5s ease-in;
+}
+
+#submit:hover {
+  background-color: #999;
+}
+
+[id='43'] {
+  background-image: url('http://www.proprofs.com/flashcards/upload/q8593530.gif');
+  background-size: 256px 256px;
+  background-repeat: no-repeat;
+  background-color: #ffffff;
+  border: 1px solid black;
+  opacity: 0.6;
+}
+
+[id='44'] {
+  background-image: url('http://www.60secondrecap.com/wp-content/uploads/2013/05/crucible.jpg');
+  background-size: 256px 256px;
+  background-repeat: no-repeat;
+}
